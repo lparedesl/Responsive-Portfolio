@@ -1,0 +1,515 @@
+@font-face {
+    font-family: 'Simplifica';
+    src: url('../fonts/simplifica/Simplifica.ttf');
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 40px;
+    min-height: 100%;
+    font-family: 'Simplifica';
+    background-color: #FFFAFA;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+h3 {
+    margin-left: 25%;
+    font-size: 40px;
+    line-height: 80px;
+}
+
+p {
+    text-align: justify;
+    font-size: 32px;
+    line-height: 46px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: #00cccc;
+}
+
+br {
+    line-height: 46px;
+}
+
+input, textarea {
+    margin-left: 25%;
+}
+
+.welcome {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 921px;
+    background-image: url('../images/main.jpg');
+    background-size: 100% 100%;
+}
+
+.title {
+    position: absolute;
+    top: 40%;
+    left: 7%;
+    font-size: 7vw;
+    line-height: 8vw;
+    color: white;
+}
+
+#wrapper {
+    width: 960px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navbar.navbar_absolute {
+    position: absolute;
+    top: 921;
+    background-color: #404040;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 50px;
+    box-shadow: 0px 8px 8px #302f2f;
+    z-index: 10000;
+}
+
+#navbar2.navbar2_absolute {
+    position: fixed;
+    top: 0;
+    background-color: #404040;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0px 8px 8px #302f2f;
+    z-index: 10000;
+}
+
+#navbar.navbar_fixed {
+    position: fixed;
+    top: 0;
+    background-color: #404040;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 50px;
+    box-shadow: 0px 8px 8px #302f2f;
+    z-index: 10000;
+}
+
+.tab {
+    float: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 33%;
+    height: 40px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    z-index: 1;
+}
+
+.divider {
+    float: left;
+    margin-top: 10px;
+    display: inline-block;
+    width: 0;
+    height: 50px;
+    border-left: 1px solid #535353;
+    border-right: 1px solid #535353;
+}
+
+#content.content_1 {
+    clear: both;
+    position: relative;
+    margin-top: 130px;
+    padding-bottom: 40px;
+    background-color: #FFFAFA;
+    width: 100%;
+    height: 100%;
+}
+
+#content.content_2 {
+    clear: both;
+    position: relative;
+    margin-top: 130px;
+    padding-bottom: 40px;
+    background-color: #FFFAFA;
+    width: 100%;
+    height: 100%;
+}
+
+#content.content_3 {
+    clear: both;
+    position: relative;
+    overflow: auto;
+    margin-top: 80px;
+    padding-bottom: 40px;
+    background-color: #FFFAFA;
+    width: 100%;
+    height: 100%;
+}
+
+
+.myPicture {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-image: url('../images/profile.jpg');
+    background-size: 100% 100%;
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 20px #302f2f;
+}
+
+.intro {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    width: 100%;
+    height: 80%;
+}
+
+.connect {
+    clear: both;
+    position: relative;
+    overflow: auto;
+    /*top: 40px;*/
+    background-color: #F2C640;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/*Social Media Icons*/
+
+.icon {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    width: 650px;
+    height: 50px;
+    text-align: justify;
+    /*-ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;*/
+    line-height: 0;
+}
+
+.icon a {
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
+.icon:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+#linkedin {
+    /*float: left;*/
+    width: 50px;
+    height: 50px;
+    content: url('../images/LinkedIn-monochrome.png');
+}
+
+#linkedin:hover {
+    content: url('../images/LinkedIn.png');
+}
+
+#facebook {
+    /*float: left;*/
+    /*margin-left: 100px;*/
+    width: 50px;
+    height: 50px;
+    content: url('../images/Facebook-monochrome.png');
+}
+
+#facebook:hover {
+    content: url('../images/Facebook.png');
+}
+
+#twitter {
+    /*float: left;*/
+    /*margin-left: 100px;*/
+    width: 50px;
+    height: 50px;
+    content: url('../images/Twitter-monochrome.png');
+}
+
+#twitter:hover {
+    content: url('../images/Twitter.png');
+}
+
+#gplus {
+    /*float: left;*/
+    /*margin-left: 100px;*/
+    width: 50px;
+    height: 50px;
+    content: url('../images/Google Plus-monochrome.png');
+}
+
+#gplus:hover {
+    content: url('../images/Google Plus.png');
+}
+
+#stackoverflow {
+    /*float: left;*/
+    /*margin-left: 100px;*/
+    width: 50px;
+    height: 50px;
+    border-radius: 7%;
+    content: url('../images/Stack Overflow-monochrome.png');
+}
+
+#stackoverflow:hover {
+    content: url('../images/Stack Overflow.png');
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #404040;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.portfolio_title, .contact_title {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.projects {
+    float: left;
+    margin-bottom: 60px;
+    width: 425px;
+    height: 375px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5%;
+}
+
+#project_1 {
+    background-image: url('../images/project1.jpg');
+    background-size: cover;
+}
+
+#project_2 {
+    margin-left: 10%; 
+    background-image: url('../images/project2.jpg');
+    background-size: cover;
+}
+
+#project_3 {
+    background-image: url('../images/project3.jpg');
+    background-size: cover;
+}
+
+#project_4 {
+    margin-left: 10%; 
+    background-color: green;
+}
+
+#project_5 {
+    margin-left: 27.55%; 
+    background-color: purple;
+}
+
+.inputbox {
+    margin-bottom: 20px;
+    width: 50%;
+    height: 40px;
+    font-size: 30px;
+    font-family: 'simplifica';
+}
+
+.textareabox {
+    width: 50%;
+    height: 210px;
+    font-size: 30px;
+    font-family: 'simplifica';
+    margin-bottom: 30px;
+}
+
+.submitbutton {
+    margin-left: 40%;
+    width: 20%;
+    height: 40px;
+    font-size: 30px;
+    font-family: 'simplifica';
+}
+
+@media screen and (max-width: 980px) {
+    .welcome {
+        background-size: 100% 95%;
+    }
+
+    #wrapper {
+        width: 100%;
+    }
+  
+    #content.content_1 p {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #content.content_2 p {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    /*#content.content_1 {
+        background-color: green;
+    }
+
+    #content.content_2 {
+        background-color: green;
+    }*/
+
+    .projects {
+        float: left;
+        margin-bottom: 60px;
+        width: 42.5%;
+        height: 367.5px;
+    }
+
+    #project_1 {
+        margin-left: 5%;
+    }
+
+    #project_2 {
+        margin-left: 5%;
+    }
+
+    #project_3 {
+        margin-left: 5%;
+    }
+
+    #project_4 {
+        margin-left: 5%;
+    }
+
+    #project_5 {
+        margin-left: 28.75%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /*#content.content_1 {
+        background-color: red;
+    }
+
+    #content.content_2 {
+        background-color: red;
+    }*/
+
+    .welcome {
+        display: none;
+    }
+
+    .title {
+        display: none;
+    }
+
+    #navbar.navbar_absolute {
+        position: fixed;
+        top: 0;
+    }
+
+    .projects {
+        margin-bottom: 60px;
+        width: 70%;
+        height: 474.5px;
+    }
+
+    #project_1 {
+        margin-left: 15%;
+    }
+
+    #project_2 {
+        margin-left: 15%;
+    }
+
+    #project_3 {
+        margin-left: 15%;
+    }
+
+    #project_4 {
+        margin-left: 15%;
+    }
+
+    #project_5 {
+        margin-left: 15%;
+    }
+
+    .icon {
+        width: 90%;
+    }
+
+    .content_3 h3 {
+        margin-left: 10%;
+    }
+
+    .inputbox {
+        margin-bottom: 20px;
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    .textareabox {
+        margin-bottom: 20px;
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    .submitbutton {
+        margin-left: 37.5%;
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    /*#content.content_1 {
+        background-color: blue;
+    }
+
+    #content.content_2 {
+        background-color: blue;
+    }*/
+
+    .projects {
+        margin-bottom: 60px;
+        width: 70%;
+        height: 395px;
+    }
+}
